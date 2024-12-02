@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot Interface</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="settings-panel">
+    <div class="control-group">
+      <label>Button Icon:</label>
+      <div class="button-icons">
+        <button>▶</button>
+        <button>→</button>
+        <button>✔</button>
+        <button>🚀</button>
+        <button>⇾</button>
+        <button>➛</button>
+        <button>SEND</button>
+      </div>
+    </div>
+
+   
+
+    <div class="control-group">
+      <label for="border-radius">Border Radius:</label>
+      <input type="range" id="border-radius" min="0" max="20">
+    </div>
+
+    <div class="control-group">
+      <label for="header-bg">Header Background Color:</label>
+      <input type="color" id="header-bg">
+    </div>
+
+    <div class="control-group">
+      <label for="bot-text-color">Bot Text Color:</label>
+      <input type="color" id="bot-text-color">
+    </div>
+
+    <div class="control-group">
+      <label for="bot-bubble-color">Bot Chat Bubble Color:</label>
+      <input type="color" id="bot-bubble-color">
+    </div>
+
+    <div class="control-group">
+      <label for="user-text-color">User Text Color:</label>
+      <input type="color" id="user-text-color">
+    </div>
+
+    <div class="control-group">
+      <label for="user-bubble-color">User Chat Bubble Color:</label>
+      <input type="color" id="user-bubble-color">
+    </div>
+
+    <div class="control-group">
+      <label>Font Style:</label>
+      <select id="font-style">
+        <option value="Arial">Arial</option>
+        <option value="Verdana">Verdana</option>
+        <option value="Georgia">Georgia</option>
+        <option value="Courier New">Courier New</option>
+        <option value="Poppins">Poppins</option>
+        <option value="Pacifico">Pacifico</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="chatbot-interface">
+    <header>
+      <div class="avatar">
+        <img src="chatt.jpg" alt="AI Assistant">
+      </div>
+      <h1>AI Assistant</h1>
+      <p>Always here to help</p>
+    </header>
+    <div class="chat-window">
+      <div class="user-message">Hii! I have a question </div>
+      
+      <div class="bot-message">Hello! how can i help you today?</div>
+      <div class="user-message typing-indicator ">Typing...</div>
+      <div class="bot-message typing-indicator">Typing...</div>
+    </div>
+    
+    <footer>
+      <input type="text" placeholder="Type your message here...">
+      <button class="send-button">▶</button>
+  
+
+    </footer>
+    
+  </div>
+  
+  <script src="scripts.js"></script>
+</body>
+</html>
